@@ -23,6 +23,7 @@ Create or update the user model
 
 If the user doesn't already exist:
 - `rails generate model User name provider uid nickname access_token`
+
 If the user already exists:
 - `rails generate migration AddOAuthToUser`
 - Define the migration as:
