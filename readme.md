@@ -146,8 +146,8 @@ Ensure your `config/routes.rb`
 
 ```
   get    '/auth/:provider'          => 'omniauth#auth',    as: :auth
-  get    '/auth/:provider/callback' => 'sessions#create'
-  get    '/auth/failure'            => 'sessions#failure'
+  get    '/auth/:provider/callback' => 'session#create'
+  get    '/auth/failure'            => 'session#failure'
 ```
 
 If you do not have a login/logout path we can add that as well:
